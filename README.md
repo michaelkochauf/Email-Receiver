@@ -10,7 +10,7 @@ In the next step, all the attachments from the email are printed via cups on the
 
 After 10 minutes, the attachments folder is cleared. 
 
-In the file ./bin/www.js the follwing things need to be defined:
+In the file [www.js](/bin/www.js) the follwing things need to be defined:
 * printerName --> Name of the printer from cups
 * allowedEmails --> List of email addresses, from which printing is allowedEmails
 * imap credentials
