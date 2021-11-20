@@ -89,7 +89,13 @@ function printAttachments(attachments)
   for(let i = 0; i < attachments.length;i++)
   {
     let path = attachments[i].path;
-    let command = "lp -d "+printerName+" "+path;
-    exec.execSync(command);
+    if(path)
+    {
+      if(fs.existsSync(path))
+      {
+        let command = "lp -d "+printerName+" "+path;
+        exec.execSync(command);
+      }
+    }
   }
 }
